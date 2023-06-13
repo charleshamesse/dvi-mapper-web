@@ -7,19 +7,22 @@
 (() => {
   'use strict'
 
-  const getStoredTheme = () => localStorage.getItem('theme')
-  const setStoredTheme = theme => localStorage.setItem('theme', theme)
+  const getStoredTheme = "dark"; // () => localStorage.getItem('theme')
+  const setStoredTheme ="dark"; //  theme => localStorage.setItem('theme', theme)
 
   const getPreferredTheme = () => {
-    const storedTheme = getStoredTheme()
+    const storedTheme = "dark"; // getStoredTheme()
+    console.log(storedTheme)
     if (storedTheme) {
       return storedTheme
     }
 
-    return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    // return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light'
+    return true
   }
 
   const setTheme = theme => {
+    console.log(theme)
     /*
     if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
       document.documentElement.setAttribute('data-bs-theme', 'dark')
