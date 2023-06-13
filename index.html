@@ -102,17 +102,29 @@
 
     
 <main>
-  <div class="container py-4">
-    <header class="pb-3 mb-4 border-bottom">
-      <a href="https://getbootstrap.com/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+
+  <div class="container" id="a-top">
+    <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
+      <a href="/#a-top" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
         <span class="fs-4">Depth-Visual-Inertial (DEVIL) Mapper</span>
       </a>
-    </header>
 
-    <div class="p-5 mb-4 bg-body-tertiary rounded-3 text-center ">
+      <ul class="nav nav-pills">
+        <li class="nav-item"><a href="#a-overview" class="nav-link">Overview</a></li>
+        <li class="nav-item"><a href="#a-viz" class="nav-link">Visualizations</a></li>
+        <li class="nav-item"><a href="#a-data" class="nav-link">Dataset</a></li>
+        <li class="nav-item"><a href="#a-contact" class="nav-link">Contact</a></li>
+      </ul>
+    </header>
+  </div>
+
+  <div class="container py-4">
+    
+
+    <div class="p-5 mb-4 bg-body-secondary rounded-3 text-center ">
       <div class="container-fluid py-5 ">
         <h1 class="display-5 fw-bold">A New Dense 3D Mapping Framework for Portable Sensors</h1>
-        <img src="./img/DEVIL.png"  width="70%" class="img-fluid" />
+        <img src="./img/meeting-devil.png"  width="7s0%" class="img-fluid" />
         <p class="col-md-12 fs-4">We propose a robust 3D mapping system for indoor spaces
           based on commercial-off-the-shelf portable depth-visual-inertial sensors.</p>
 
@@ -121,17 +133,20 @@
 
     <!-- content  -->
 
-    <div class="row align-items-md-stretch my-5">
+    <div class="row align-items-md-stretch my-5" id="a-overview">
       <div class="col-md-12">
-        <div class="h-100 p-5 text-bg-secondary rounded-3">
+        <div class="h-100 p-5 text-bg-light rounded-3">
           <h2>Overview</h2>
+
+          <img src="./img/DEVIL.png"  width="100%" class="img-fluid" />
+          <p>Our system leverages the RGB camera, the IMU and the depth camera of common off-the-shelf sensors such as the Microsoft Azure Kinect or the Intel Realsense L515. By combining different sub-systems (visual-inertial odometry (VIO), depth odometry and mapping (DOM), IMU state propagation), our system achieves state-of-the-art performance on challenging mapping datasets.</p>
           <p>This web page serves as optional supplementary material for our paper on the DEVIL Mapper system that is currently under revision. For now, we provide additional visualizations, 3D point clouds and videos of the datasets and executions of our proposed algorithm. Later on, we will add more resources such as code, datasets, additional experiments and follow-up work. </p>
         </div>
       </div>
     </div>
 
 
-    <div class="row align-items-md-stretch my-5">
+    <div class="row align-items-md-stretch my-5" id="a-viz">
       <div class="col-md-12">
         <div class="h-100 p-5 text-bg-light rounded-3">
           <h2>Additional visualizations</h2>
@@ -178,7 +193,7 @@
         </div>
       </div>
     </div>
-    <div class="row align-items-md-stretch my-5">
+    <div class="row align-items-md-stretch my-5" id="a-data">
       <div class="col-md-12">
         <div class="h-100 p-5 text-bg-light rounded-3">
           <h2>Dataset</h2>
@@ -189,7 +204,7 @@
 
     <!-- end -->
 
-    <div class="row align-items-md-stretch">
+    <div class="row align-items-md-stretch" id="a-contact">
       <div class="col-md-6">
         <div class="h-100 p-5 text-bg-light rounded-3">
           <h2>Acknowledgements</h2>
