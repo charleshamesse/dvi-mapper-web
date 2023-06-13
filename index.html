@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html  lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><script src="index_files/color-modes.js"></script>
+
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.112.5">
+    <title>DEVIL Mapper</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/jumbotron/">
+
+    
+
+    
+
+<link href="index_files/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+
+    <!-- Favicons -->
+
+<meta name="theme-color" content="#712cf9">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+      .b-example-divider {
+        width: 100%;
+        height: 3rem;
+        background-color: rgba(0, 0, 0, .1);
+        border: solid rgba(0, 0, 0, .15);
+        border-width: 1px 0;
+        box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
+      }
+
+      .b-example-vr {
+        flex-shrink: 0;
+        width: 1.5rem;
+        height: 100vh;
+      }
+
+      .bi {
+        vertical-align: -.125em;
+        fill: currentColor;
+      }
+
+      .nav-scroller {
+        position: relative;
+        z-index: 2;
+        height: 2.75rem;
+        overflow-y: hidden;
+      }
+
+      .nav-scroller .nav {
+        display: flex;
+        flex-wrap: nowrap;
+        padding-bottom: 1rem;
+        margin-top: -1px;
+        overflow-x: auto;
+        text-align: center;
+        white-space: nowrap;
+        -webkit-overflow-scrolling: touch;
+      }
+
+      .btn-bd-primary {
+        --bd-violet-bg: #712cf9;
+        --bd-violet-rgb: 112.520718, 44.062154, 249.437846;
+
+        --bs-btn-font-weight: 600;
+        --bs-btn-color: var(--bs-white);
+        --bs-btn-bg: var(--bd-violet-bg);
+        --bs-btn-border-color: var(--bd-violet-bg);
+        --bs-btn-hover-color: var(--bs-white);
+        --bs-btn-hover-bg: #6528e0;
+        --bs-btn-hover-border-color: #6528e0;
+        --bs-btn-focus-shadow-rgb: var(--bd-violet-rgb);
+        --bs-btn-active-color: var(--bs-btn-hover-color);
+        --bs-btn-active-bg: #5a23c8;
+        --bs-btn-active-border-color: #5a23c8;
+      }
+      .bd-mode-toggle {
+        z-index: 1500;
+      }
+    </style>
+
+    
+  </head>
+  <body>
+
+    
+<main>
+  <div class="container py-4">
+    <header class="pb-3 mb-4 border-bottom">
+      <a href="https://getbootstrap.com/" class="d-flex align-items-center text-body-emphasis text-decoration-none">
+        <span class="fs-4">Depth-Visual-Inertial (DEVIL) Mapper</span>
+      </a>
+    </header>
+
+    <div class="p-5 mb-4 bg-body-tertiary rounded-3 text-center ">
+      <div class="container-fluid py-5 ">
+        <h1 class="display-5 fw-bold">A New Dense 3D Mapping Framework for Portable Sensors</h1>
+        <img src="./img/DEVIL.png"  width="70%" class="img-fluid" />
+        <p class="col-md-12 fs-4">We propose a robust 3D mapping system for indoor spaces
+          based on commercial-off-the-shelf portable depth-visual-inertial sensors.</p>
+
+      </div>
+    </div>
+
+    <!-- content  -->
+
+    <div class="row align-items-md-stretch my-5">
+      <div class="col-md-12">
+        <div class="h-100 p-5 text-bg-secondary rounded-3">
+          <h2>Overview</h2>
+          <p>This web page serves as optional supplementary material for our paper on the DEVIL Mapper system that is currently under revision. For now, we provide additional visualizations, 3D point clouds and videos of the datasets and executions of our proposed algorithm. Later on, we will add more resources such as code, datasets, additional experiments and follow-up work. </p>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="row align-items-md-stretch my-5">
+      <div class="col-md-12">
+        <div class="h-100 p-5 text-bg-light rounded-3">
+          <h2>Additional visualizations</h2>
+          <h3>Experiment I: More results</h3>
+
+          <h6>1. Class - Map obtained with DEVIL on Azure Kinect</h6>
+          <img src="./img/class_devil.png"  width="70%" class="img-fluid" />
+          <p>Remark how all walls, ceilings and other elements appear straight and mapped in a sharp manner. Even the corners are very clearly mapped.</p>
+          <br />
+          <br />
+
+          <h6>2. Meeting - Map obtained with DEVIL on Azure Kinect</h6>
+          <img src="./img/meeting-devil.png"  width="49%" class="img-fluid" />
+          <img src="./img/meeting_devil-alignment.png" width="49%"  class="img-fluid" />
+          <p>Same remark as above.</p>
+          <br />
+          <br />
+
+          <h6>3. Parking - Map obtained with DEVIL (left) and FAST-LIO2-SLAM (right)</h6>
+          <img src="./img/parking-devil.png"  width="49%" class="img-fluid" />
+          <img src="./img/parking-fast_lio.png"  width="49%" class="img-fluid" />
+          <p>Notice that since the Azure Kinect's range is far lower than the Livox Avia's range, the map obtained with DEVIL is much less extended than the one with FAST-LIO2-SLAM. Also, we only show every tenth point in this plot, the actual resulting point cloud is ten times denser. However, the trajectory of DEVIL is very close to that of FAST-LIO2-SLAM, indicating that it performs well. </p>
+          <br />
+          <br />
+
+          <h6>4. Stairs - Map obtained with DEVIL (left), VoxelMap (center), FAST-LIO2-SLAM (right)</h6>
+          <img src="./img/stairs-devil.png"  width="32%" class="img-fluid" />
+          <img src="./img/stairs_voxelmap.png"  width="32%" class="img-fluid" />
+          <img src="./img/stairs-fast_lio.png"  width="32%" class="img-fluid" />
+          <p>Here, we can clearly see VoxelMap failing to keep track properly. The resulting map has an evident issue.</p>
+          <br />
+          <br />
+
+          <h3>Experiment IV: Full-house scan</h3>
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/2AQ3ZfNb81w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+    <div class="row align-items-md-stretch my-5">
+      <div class="col-md-12">
+        <div class="h-100 p-5 text-bg-light rounded-3">
+          <h2>Dataset</h2>
+          <p>The datasets used in Experiments I, III and IV will be released to the public. Unfortunately, we cannot release the dataset for Experiment II due to privacy issues. All datasets will be made available in the form of rosbags, with synchronized topics for the LiDAR-inertial reference system and the depth-visual-inertial sensor system.</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- end -->
+
+    <div class="row align-items-md-stretch">
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-light rounded-3">
+          <h2>Acknowledgements</h2>
+          <p>This research is done in the context of Charles Hamesse's PhD programme, jointly supervised by Ghent University (Prof. Hiep Luong) and the Royal Military Academy of Belgium (Prof. Rob Haelterman). It is funded by the Royal Higher Institute for Defence of Belgium.</p>
+        </div>
+      </div>
+      
+      <div class="col-md-6">
+        <div class="h-100 p-5 text-bg-primary rounded-3">
+          <h2>Get in touch</h2>
+          <p>Feel free to get in contact with me if you have any feedback, request or simply wish to know more about our work. I'm available at charles.hamesse [at] mil.be.</p>
+        </div>
+      </div>
+      
+    </div>
+
+    <footer class="pt-3 mt-4 text-body-secondary border-top">
+      © 2023
+    </footer>
+  </div>
+</main>
+<script src="index_files/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+    
+
+</body></html>
