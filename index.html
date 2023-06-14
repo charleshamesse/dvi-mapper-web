@@ -151,10 +151,14 @@
         <div class="h-100 p-5 text-bg-light rounded-3">
           <h2>Additional visualizations</h2>
           <h3>Experiment I: More results</h3>
+          
+          This video shows the RGB stream of the 4 sequences used in Experiment I:
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/RpQDojitJ24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+          <p>We will now show the resulting point clouds.</p>
 
           <h6>1. Class - Map obtained with DEVIL on Azure Kinect</h6>
           <img src="./img/class_devil.png"  width="70%" class="img-fluid" />
-          <p>Remark how all walls, ceilings and other elements appear straight and mapped in a sharp manner. Even the corners are very clearly mapped.</p>
+          <p>Remark how all walls, ceilings and other elements appear straight and mapped in a sharp manner. Even the corners are very sharp.</p>
           <br />
           <br />
 
@@ -168,7 +172,7 @@
           <h6>3. Parking - Map obtained with DEVIL (left) and FAST-LIO2-SLAM (right)</h6>
           <img src="./img/parking-devil.png"  width="49%" class="img-fluid" />
           <img src="./img/parking-fast_lio.png"  width="49%" class="img-fluid" />
-          <p>Notice that since the Azure Kinect's range is far lower than the Livox Avia's range, the map obtained with DEVIL is much less extended than the one with FAST-LIO2-SLAM. Also, we only show every tenth point in this plot, the actual resulting point cloud is ten times denser. However, the trajectory of DEVIL is very close to that of FAST-LIO2-SLAM, indicating that it performs well. </p>
+          <p>Notice that since the Azure Kinect's range is far lower than the Livox Avia's range, the map obtained with DEVIL is much less extended than the one with FAST-LIO2-SLAM. However, the trajectory of DEVIL is very close to that of FAST-LIO2-SLAM, indicating that it maps accurately. (Also, we only show every tenth point in this plot, the actual resulting point cloud is ten times denser.) </p>
           <br />
           <br />
 
@@ -176,9 +180,13 @@
           <img src="./img/stairs-devil.png"  width="32%" class="img-fluid" />
           <img src="./img/stairs_voxelmap.png"  width="32%" class="img-fluid" />
           <img src="./img/stairs-fast_lio.png"  width="32%" class="img-fluid" />
-          <p>Here, we can clearly see VoxelMap failing to keep track properly. The resulting map has an evident issue.</p>
+          <p>Here, we can clearly that both DEVIL and FAST-LIO2-SLAM achieve good results, while VoxelMap fails to keep track properly. The resulting map has an evident issue.</p>
           <br />
           <br />
+
+          <h3>Experiment III: Lab loop and corridor</h3>
+          This video shows the RGB stream of various sequences captured in the 2 scenes from Experiment II:
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/It0RFtGasJ4" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
 
           <h3>Experiment IV: Full-house scan</h3>
           <iframe width="560" height="315" src="https://www.youtube.com/embed/2AQ3ZfNb81w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
