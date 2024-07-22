@@ -7,7 +7,7 @@
     <meta name="description" content="">
     <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
     <meta name="generator" content="Hugo 0.112.5">
-    <title>DEVIL Mapper</title>
+    <title>DVI Mapper</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/jumbotron/">
 
@@ -106,7 +106,7 @@
   <div class="container" id="a-top">
     <header class="d-flex flex-wrap justify-content-center py-3 mb-4 border-bottom">
       <a href="/#a-top" class="d-flex align-items-center mb-3 mb-md-0 me-md-auto link-body-emphasis text-decoration-none">
-        <span class="fs-4">Depth-Visual-Inertial (DEVIL) Mapper</span>
+        <span class="fs-4">Depth-Visual-Inertial (DVI) Mapper</span>
       </a>
 
       <ul class="nav nav-pills">
@@ -140,7 +140,7 @@
 
           <img src="./img/DEVIL.png"  width="100%" class="img-fluid" />
           <p>Our system leverages the RGB camera, the IMU and the depth camera of common off-the-shelf sensors such as the Microsoft Azure Kinect or the Intel Realsense L515. By combining different sub-systems (visual-inertial odometry (VIO), depth odometry and mapping (DOM), IMU state propagation), our system achieves state-of-the-art performance on challenging mapping datasets.</p>
-          <p>This web page serves as optional supplementary material for our paper on the DEVIL Mapper system that is currently under revision. For now, we provide additional visualizations, 3D point clouds and videos of the datasets and executions of our proposed algorithm. Later on, we will add more resources such as code, datasets, additional experiments and follow-up work. </p>
+          <p>This web page serves as optional supplementary material for our paper on the DVI Mapper system that is currently under revision. For now, we provide additional visualizations, 3D point clouds and videos of the datasets and executions of our proposed algorithm. Later on, we will add more resources such as code, datasets, additional experiments and follow-up work. </p>
         </div>
       </div>
     </div>
@@ -156,31 +156,31 @@
           <iframe width="560" height="315" src="https://www.youtube.com/embed/RpQDojitJ24" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
           <p>We will now show the resulting point clouds.</p>
 
-          <h6>1. Class - Map obtained with DEVIL on Azure Kinect</h6>
+          <h6>1. Class - Map obtained with DVI Mapper on Azure Kinect</h6>
           <img src="./img/class_devil.png"  width="70%" class="img-fluid" />
           <p>Remark how all walls, ceilings and other elements appear straight and mapped in a sharp manner. Even the corners are very sharp.</p>
           <br />
           <br />
 
-          <h6>2. Meeting - Map obtained with DEVIL on Azure Kinect</h6>
+          <h6>2. Meeting - Map obtained with DVI Mapper on Azure Kinect</h6>
           <img src="./img/meeting-devil.png"  width="49%" class="img-fluid" />
           <img src="./img/meeting_devil-alignment.png" width="49%"  class="img-fluid" />
           <p>Same remark as above.</p>
           <br />
           <br />
 
-          <h6>3. Parking - Map obtained with DEVIL (left) and FAST-LIO2-SLAM (right)</h6>
+          <h6>3. Parking - Map obtained with DVI Mapper (left) and FAST-LIO2-SLAM (right)</h6>
           <img src="./img/parking-devil.png"  width="49%" class="img-fluid" />
           <img src="./img/parking-fast_lio.png"  width="49%" class="img-fluid" />
-          <p>Notice that since the Azure Kinect's range is far lower than the Livox Avia's range, the map obtained with DEVIL is much less extended than the one with FAST-LIO2-SLAM. However, the trajectory of DEVIL is very close to that of FAST-LIO2-SLAM, indicating that it maps accurately. (Also, we only show every tenth point in this plot, the actual resulting point cloud is ten times denser.) </p>
+          <p>Notice that since the Azure Kinect's range is far lower than the Livox Avia's range, the map obtained with DVI Mapper is much less extended than the one with FAST-LIO2-SLAM. However, the trajectory of DVI Mapper is very close to that of FAST-LIO2-SLAM, indicating that it maps accurately. (Also, we only show every tenth point in this plot, the actual resulting point cloud is ten times denser.) </p>
           <br />
           <br />
 
-          <h6>4. Stairs - Map obtained with DEVIL (left), VoxelMap (center), FAST-LIO2-SLAM (right)</h6>
+          <h6>4. Stairs - Map obtained with DVI Mapper (left), VoxelMap (center), FAST-LIO2-SLAM (right)</h6>
           <img src="./img/stairs-devil.png"  width="32%" class="img-fluid" />
           <img src="./img/stairs_voxelmap.png"  width="32%" class="img-fluid" />
           <img src="./img/stairs-fast_lio.png"  width="32%" class="img-fluid" />
-          <p>Here, we can clearly that both DEVIL and FAST-LIO2-SLAM achieve good results, while VoxelMap fails to keep track properly. The resulting map has an evident issue.</p>
+          <p>Here, we can clearly that both DVI Mapper and FAST-LIO2-SLAM achieve good results, while VoxelMap fails to keep track properly. The resulting map has an evident issue.</p>
           <br />
           <br />
 
@@ -216,7 +216,7 @@
       <div class="col-md-6">
         <div class="h-100 p-5 text-bg-light rounded-3">
           <h2>Acknowledgements</h2>
-          <p>This research is done in the context of Charles Hamesse's PhD programme, jointly supervised by Ghent University (Prof. Hiep Luong) and the Royal Military Academy of Belgium (Prof. Rob Haelterman). It is funded by the Royal Higher Institute for Defence of Belgium.</p>
+          <p>This research is done in the context of Charles Hamesse's PhD program, jointly supervised by Ghent University (Prof. Hiep Luong) and the Royal Military Academy of Belgium (Prof. Rob Haelterman). It is funded by the Royal Higher Institute for Defence of Belgium.</p>
         </div>
       </div>
       
